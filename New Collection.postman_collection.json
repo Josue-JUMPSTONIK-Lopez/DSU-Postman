@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "10fc5724-30e9-46dd-a4f7-147fb2be0ded",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "Get 1 post",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "Post user with UserId1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"foo\",\n    \"body\": \"bar\",\n    \"userId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/posts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post user Josue",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Josue\",\n    \"body\": \"DSU\",\n    \"userId\": 4489\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/posts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT",
+			"item": [
+				{
+					"name": "PUT on user 1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"title\": \"foo\",\n    \"body\": \"bar\",\n    \"userId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/posts/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT on Josue",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"title\": \"Josue\",\n    \"body\": \"DSU-Postman\",\n    \"userId\": 324\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/posts/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "DELETE user 1",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
